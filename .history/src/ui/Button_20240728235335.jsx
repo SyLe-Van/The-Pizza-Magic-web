@@ -10,10 +10,6 @@ function Button({ children, disabled, to, onClick , type}) {
     if (to) { 
         return <Link className={styles[type]} to={to}>{children}</Link>
     }
-    if (onClick) { 
-        return (<button onClick={onClick} disabled={disabled} className={styles[type]}>
-                {children} </button>)
-    }
     return <button disabled={disabled} className={styles[type]}>
       {children}
   </button>
